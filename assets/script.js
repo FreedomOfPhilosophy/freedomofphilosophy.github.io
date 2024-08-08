@@ -12,4 +12,8 @@ function toggleMode() {
         link.classList.toggle('night');
         link.classList.toggle('day');
     });
+
+    const toggleBtn = document.querySelector('.toggle-btn');
+    toggleBtn.classList.toggle('night');
+    toggleBtn.classList.toggle('day');
 }
