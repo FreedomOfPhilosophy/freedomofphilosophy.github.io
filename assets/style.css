@@ -29,38 +29,38 @@ h1 {
 
 /* Day Mode */
 body.day {
-    background-color: #F0F0F0;
-    color: #333333;
+    background-color: #F5F5F5; /* Light Gray */
+    color: #333333; /* Dark Gray */
 }
 
 .container.day {
-    background-color: #FFFFFF;
+    background-color: #FFFFFF; /* White */
 }
 
 .link.day {
-    background-color: #007BFF;
-    color: #FFFFFF;
+    background-color: #003366; /* Deep Blue */
+    color: #FFFFFF; /* White */
 }
 
 .link.day:hover {
-    background-color: #0056b3;
+    background-color: #4B5320; /* Bronze Green */
 }
 
 /* Night Mode */
 body.night {
-    background-color: #1A1A1A;
-    color: #E0E0E0;
+    background-color: #121212; /* Very Dark Gray */
+    color: #D3D3D3; /* Light Gray */
 }
 
 .container.night {
-    background-color: #333333;
+    background-color: #333333; /* Dark Gray */
 }
 
 .link.night {
-    background-color: #66B2FF;
-    color: #1A1A1A;
+    background-color: #000080; /* Navy Blue */
+    color: #D3D3D3; /* Light Gray */
 }
 
 .link.night:hover {
-    background-color: #3399FF;
+    background-color: #006400; /* Dark Green */
 }
