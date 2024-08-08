@@ -5,13 +5,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #F5F5DC; /* Soft Beige */
     margin: 0;
 }
 
 .container {
     text-align: center;
-    background: #FFFFFF; /* Pure White */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -19,20 +17,50 @@ body {
 
 h1 {
     margin-bottom: 20px;
-    color: #1A1F71; /* Deep Blue */
 }
 
 .link {
     display: block;
     margin: 10px 0;
     padding: 10px 20px;
-    background: #4CAF50; /* Liberty Green */
-    color: #FFFFFF; /* Pure White */
     text-decoration: none;
     border-radius: 5px;
 }
 
-.link:hover {
-    background: #FFD700; /* Philosopher’s Gold */
-    color: #1A1F71; /* Deep Blue */
+/* Day Mode */
+body.day {
+    background-color: #F0F0F0;
+    color: #333333;
+}
+
+.container.day {
+    background-color: #FFFFFF;
+}
+
+.link.day {
+    background-color: #007BFF;
+    color: #FFFFFF;
+}
+
+.link.day:hover {
+    background-color: #0056b3;
+}
+
+/* Night Mode */
+body.night {
+    background-color: #1A1A1A;
+    color: #E0E0E0;
+}
+
+.container.night {
+    background-color: #333333;
+}
+
+.link.night {
+    background-color: #66B2FF;
+    color: #1A1A1A;
+}
+
+.link.night:hover {
+    background-color: #3399FF;
 }
