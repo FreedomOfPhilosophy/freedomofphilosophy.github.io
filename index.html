@@ -11,12 +11,13 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Linktree of Freedom of Philosophy</h1>
-        <a class="link" href="https://example1.com"><i class="fas fa-link"></i> Link 1</a>
-        <a class="link" href="https://example2.com"><i class="fas fa-link"></i> Link 2</a>
-        <a class="link" href="https://example3.com"><i class="fas fa-link"></i> Link 3</a>
+<body class="day">
+    <div class="container day">
+        <h1>Welcome to My Linktree</h1>
+        <button onclick="toggleMode()" class="btn btn-secondary mb-3">Toggle Day/Night Mode</button>
+        <a class="link day" href="https://example1.com"><i class="fas fa-link"></i> Link 1</a>
+        <a class="link day" href="https://example2.com"><i class="fas fa-link"></i> Link 2</a>
+        <a class="link day" href="https://example3.com"><i class="fas fa-link"></i> Link 3</a>
         <a class="link" href="https://example4.com"><i class="fas fa-link"></i> Link 4</a>
         <a class="link" href="https://example5.com"><i class="fas fa-link"></i> Link 5</a>
     </div>
@@ -25,5 +26,21 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle('night');
+            document.body.classList.toggle('day');
+            
+            const container = document.querySelector('.container');
+            container.classList.toggle('night');
+            container.classList.toggle('day');
+            
+            const links = document.querySelectorAll('.link');
+            links.forEach(link => {
+                link.classList.toggle('night');
+                link.classList.toggle('day');
+            });
+        }
+    </script>
 </body>
 </html>
